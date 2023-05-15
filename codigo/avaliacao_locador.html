@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="avaliacao.css">
+        <script src="avaliacao_locador.js"></script>
+        <title> Avaliação </title>
+        </head>
+<body>
+    
+<center>
+   <div>
+
+    <img src="logo consumo consciente.jpeg" width="20%">
+
+    <h1 id="titulo"> Avalie o seu locatário</h1>
+
+    <h3> Escolha de 1 a 5 estrelas para classificar:</h3>
+    
+    <h3>Do que você gostou?</h3>
+
+<button id="bt_cordialidade_1">Cordialidade</button ><button id="bt_pontualidade_1">Pontualidade</button>
+
+<button id="bt_honestidade_1">Honestidade</button><button id="bt_zelo">Zeloso</button>
+    
+<h3>Deixe aqui seu comentário: </h3>
+
+<a href="javascript:void(0)" onclick="Avaliar(1);">
+    <img src="star2.png" id="s1"></a>
+<a href="javascript:void(0)" onclick="Avaliar(2);">
+    <img src="star2.png" id="s2"></a>
+<a href="javascript:void(0)" onclick="Avaliar(3);">
+    <img src="star2.png" id="s3"></a>
+<a href="javascript:void(0)" onclick="Avaliar(4);">
+    <img src="star2.png" id="s4"></a>
+<a href="javascript:void(0)" onclick="Avaliar(5);">
+    <img src="star2.png" id="s5"></a>
+
+<p id="rating">0</p>
+
+    
+<textarea name="comentario" id="comentario"  cols="30" rows="10" placeholder="Digite aqui.."  ></textarea>
+
+<br>
+
+<br>
+
+<br>
+
+<button id="bt_enviar" onclick="Enviar()">Enviar</button>
+
+</div> 
+
+</center>
+<script> </script>
+    
+</body>  
+
+</html>

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap');
+#titulo
+{
+color:bisque;
+background-size: contain;
+width: fit-content;
+border: 10px;
+margin: 10%;
+font-family: 'Inter',  sans-serif;
+
+
+}
+body
+{
+    background-color:black;
+    text-align: left;
+}
+#comentario_cliente
+{
+width: 400px;
+
+}
+h3,p
+{
+ color: bisque;   
+}
+#bt_cordialidade,#bt_cordialidade_1
+{
+ background-color: aquamarine; 
+ border-color: cadetblue; 
+ border-radius: 15px; 
+}
+#bt_estado_cons,#bt_pontualidade_1
+{
+    background-color: aquamarine; 
+    border-color: cadetblue;
+    border-radius: 15px;   
+    margin-left: 80px;
+    margin-right: 80px;
+}
+#bt_honestidade,#bt_honestidade_1
+{
+    background-color: aquamarine; 
+    border-color: cadetblue;
+    border-radius: 15px;   
+    margin-right: 80px;
+}
+#bt_pontualidade,#bt_zelo
+{
+    background-color: aquamarine;
+    border-color: cadetblue; 
+    border-radius: 15px;   
+    margin-right: 80px;
+}
+#bt_enviar
+{
+    background-color: aquamarine;
+    border-color: cadetblue; 
+    border-radius: 15px;      
+}

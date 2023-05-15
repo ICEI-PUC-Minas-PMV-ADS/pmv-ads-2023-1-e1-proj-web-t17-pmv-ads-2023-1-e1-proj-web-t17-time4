@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap');
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.center3{
+    max-width:auto;
+    margin:0 auto;
+    display: flex;
+    background-color:#0c0ce94d;
+    padding:0 1%;
+}
+.Home{
+    background-color: green;
+    color:white;
+    border:none;
+    cursor:pointer;
+    padding:center;
+    margin-bottom: center;
+    margin-top:10px;
+}
+}

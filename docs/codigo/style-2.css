@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap');
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.center{
+    max-width:auto;
+    margin:0 auto;
+    display:flex;
+    background-color:#0c0ce94d ;
+    padding:0 1%;
+}
+
+.mainmenubtn {
+    background-color:green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-bottom: center;
+    margin-top:8px;
+
+}
+.mainmenubtn:hover {
+    background-color:green;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    min-width: 200px;
+    padding-left: center;
+}
+.dropdown-child a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-child a:hover{
+    background-color:green;
+}
+.dropdown-child:hover{
+    background-color: rgb(41, 250, 41);
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+
+}
+.imagem{
+    position:left;    
+    padding-left:15%;
+    padding-top:5%;
+}
+.diferencial-single{
+    color:green;
+    padding-top:0%;
+    padding-left: incline-end;
+}
+.diferencial_single , .avaliação{
+    display:flex;
+    padding-left:5%;
+}
+.avaliação{
+    padding-top:5%;
+}
+}

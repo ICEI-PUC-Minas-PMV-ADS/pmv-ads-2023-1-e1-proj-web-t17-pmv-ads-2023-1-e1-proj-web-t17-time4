@@ -4,7 +4,7 @@ ACIG-RENT
 
 `Curso`
 
-Analise e  Desenvolvimento de Sistema
+Analise e  Desenvolvimento de Sistemas
 
 
 ## Integrantes

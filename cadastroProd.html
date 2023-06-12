@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastroProd.css   ">
+    <title>Formulário de cadastro</title>
+    <script src="cadastro.js"></script>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-image" id="form-image">
+        <img src="undraw_shopping_re_hdd9.svg" >
+ </div>
+ <div class="form">
+    <form action="#">
+        <div class="form-header">
+            <div class="title">
+                <h1>Cadastre seu produto </h1>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div><!-- Aqui o usuário deve ir a página de login-->
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <label for="nome-produto">Produto</label>
+                <input id="nome-produto" type="text" name="nome-produto" placeholder="Exemplo: Furadeira " required>
+            </div>
+
+            <div class="input-box">
+                <label for="descricao-produto">Descricao</label>
+                <input id="descricao-produto" type="descricao-produto" name="descricao-produto" placeholder="Descreva o seu produto" required>
+            </div>
+            <div class="input-box">
+                <label for="cidade-produto">Cidade</label>
+                <input id="cidade-produto" type="cidade-produto" name="cidade-produto" placeholder="Qual a sua cidade" required>
+            </div>
+            <div class="input-box">
+                <label for="number">Celular</label>
+                <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" max-legth="10" required>
+            </div>
+            
+            <div class="input-box">
+                <label for="Bairro-produto">Bairro</label>
+                <input id="Bairro-produto" type="Bairro-produto" name="Bairro-produto" placeholder="Qual o seu bairro" required>
+            </div>
+
+            <div class="input-box">
+                <label for="valor">Valor da diaira </label>
+                <input id="valor" type="valor" name="valor" placeholder="Exemplo:35 RS" required>
+
+                
+
+                <div class="foto-anuncio">
+                    <div class="city-input">
+                        <div class="city-title">
+                       <h6>Adicionar Fotos</h6>
+            
+                        </div>
+                        
+                        <div class="imagem-anuncio">
+                            <input id="imagem-produto" type="image" name="imagem-produto" placeholder="Coloque fotos no seu anuncio" required>
+                            <div class="continue-button">
+                                <button onclick="Cadastrar();"><a href="#">Continuar</a></button>
+                            </div><!-- Aqui o usuário deve ir a página de produtos-->    
+                            
+                        </div>
+
+                        
+            </div>
+        </div>
+              </div>
+
+        </div>
+        
+            </div>
+        </div>
+
+       
+    </form>
+ </div>
+
+  </div>  
+  <script></script>
+</body>
+</html>

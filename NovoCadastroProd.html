@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastroProd.css">
+    <title>Formulário de cadastro</title>
+    <script src="cadastroprod.js"></script>
+    <script >
+        function validarFormulario() {
+            var nomeProduto = document.getElementById("nome-produto").value;
+            var descricaoProduto = document.getElementById("descricao-produto").value;
+            var cidadeProduto = document.getElementById("cidade-produto").value;
+            var numeroCelular = document.getElementById("number").value;
+            var bairroProduto = document.getElementById("Bairro-produto").value;
+            var valorDiaria = document.getElementById("valor").value;
+
+            if (nomeProduto.trim() === "" || descricaoProduto.trim() === "" || cidadeProduto.trim() === "" || numeroCelular.trim() === "" || bairroProduto.trim() === "" || valorDiaria.trim() === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false;
+            }
+
+            // Validar formato do número de celular
+            //var celularRegex = /^\(\d{2}\)\s\d{4}-\d{4}$/;
+            //if (!celularRegex.test(numeroCelular)) {
+            //    alert("Por favor, insira um número de celular válido no formato (xx) xxxx-xxxx.");
+            //    return false;
+           // }
+
+            // Validar formato do valor da diária
+            var valorRegex = /^\d+(\.\d{1,2})?$/;
+            if (!valorRegex.test(valorDiaria)) {
+                alert("Por favor, insira um valor de diária válido.");
+                return false;
+            }
+
+            return true;
+        }
+
+
+    </script>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-image" id="form-image">
+        <img src="https://i.postimg.cc/2S6JLKyk/logo-1-removebg-preview.png" >
+ </div>
+ <div class="form">
+    <form onsubmit="return validarFormulario()">
+        <div class="form-header">
+            <div class="title">
+                <h1>Cadastre seu produto</h1>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div><!-- Aqui o usuário deve ir a página de login-->
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <label for="nome-produto">Produto</label>
+                <input id="nome-produto" type="text" name="nome-produto" placeholder="Exemplo: Furadeira" required>
+            </div>
+
+            <div class="input-box">
+                <label for="descricao-produto">Descrição</label>
+                <input id="descricao-produto" type="text" name="descricao-produto" placeholder="Descreva o seu produto" required>
+            </div>
+            <div class="input-box">
+                <label for="cidade-produto">Cidade</label>
+                <input id="cidade-produto" type="text" name="cidade-produto" placeholder="Qual a sua cidade" required>
+            </div>
+            <div class="input-box">
+                <label for="number">Celular</label>
+                <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" maxlength="15" required>
+            </div>
+            
+            <div class="input-box">
+                <label for="Bairro-produto">Bairro</label>
+                <input id="Bairro-produto" type="text" name="Bairro-produto" placeholder="Qual o seu bairro" required>
+            </div>
+
+            <div class="input-box">
+                <label for="valor">Valor da diária</label>
+                <input id="valor" type="text" name="valor" placeholder="Exemplo: 35 RS" required>
+            </div>
+
+            <div class="foto-anuncio">
+                <div class="city-input">
+                    <div class="city-title">
+                        <h4>Adicionar Imagens</h4>
+                        <br>
+                        <h5>Utilize o site PostImages e gere o link da imagem para compor seu anúncio: </h5>
+                        <br>
+                        <a href="https://postimages.org/" target="_blank" rel="noopener noreferrer" id="imagem_adicionada" >Clique aqui</a>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="imagem-anuncio">
+                        <input id="imagem-produto" type="text" name="imagem-produto" placeholder="Coloque aqui o link da imagem " required>
+                        <div class="continue-button">
+                            <button type="submit" onclick="Cadastrar()">Continuar</button>
+                        </div><!-- Aqui o usuário deve ir a página de produtos-->    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+ </div>
+</div>
+<script src="cadastroprod.js"></script>
+</body>
+</html>

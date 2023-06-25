@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+#container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+   
+}
+.imagem-logo
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde3a7d7;
+    padding: 1rem;
+}
+.avaliacao
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+#titulo
+{
+    border: 10px;
+    margin: 15px;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c0ce94d;
+    background-color:#fde3a7d7;
+    
+}
+h3
+{
+    margin: 15px;
+}
+#comentario
+{
+    width: 250px;
+    height: 300px;
+    border:3px solid;
+}
+.linha, .linha2, .linha3, .linha4
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.1rem;
+    
+}
+#checkbox_cordialidade, #checkbox_pontualidade,#checkbox_honestidade, #checkbox_zeloso, #checkbox_conservacao2, #checkbox_cordialidade2, #checkbox_pontualidade2, #checkbox_honestidade2{
+    margin: 10px;
+}
+ #icones
+ {
+    flex-direction: row;
+ }
+ #bt_sair, #bt_sair2
+ {
+    position: relative;
+    left:250px;
+    border:none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    
+ }
+#bt_cordialidade,#bt_cordialidade_1
+{
+    margin-top: 2.5rem;
+    border:none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 50px;
+}
+#bt_estado_conservacao,#bt_pontualidade_1
+{
+    margin-top: 2.5rem;
+    border:none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 50px;
+}
+#bt_honestidade,#bt_honestidade_1
+{
+    margin-top: 2.5rem;
+    border:none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer; 
+    margin: 0 50px;  
+}
+#bt_pontualidade,#bt_zelo
+{
+    margin-top: 2.5rem;
+    width: 100px;
+    border:none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;  
+    margin: 0 50px; 
+}
+#bt_enviar,#bt_enviar2
+{
+    margin-top: 2.5rem;
+    border:none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;   
+    padding: 10px;  
+}
+button:hover {
+ 
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+    background-color: #6b63fff1;
+}
+@media screen and (max-width: 1330px) {
+    .imagem-logo {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    #comentario
+    {
+        width: 250px;
+        height: 300px;
+        border:3px solid;
+    }
+    
+}
+@media screen and (max-width: 1064px) {
+    #bt_sair
+    {
+        left: 150px;
+    }
+     .container {
+        width:  90%;
+        height: auto;
+        overflow-y: scroll;
+
+     }
+     .group_buttons {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 100%;
+        max-width: 100%;
+        padding-right: 5rem;
+    }
+    #avaliacao
+    {
+        width: 100%;
+    }
+    #comentario
+    {
+        width: auto;
+        height: auto;
+    }
+
+}

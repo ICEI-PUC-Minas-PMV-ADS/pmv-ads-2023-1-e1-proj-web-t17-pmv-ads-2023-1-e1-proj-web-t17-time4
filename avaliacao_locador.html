@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="avaliacao.css">
+        <script src="locador.js"></script>
+        <title> Avaliação </title>
+        </head>
+<body>
+
+  <div class="container" id="container">
+
+   
+<div class="imagem-logo" id="imagem-logo">
+    <img id="imagem-logo" src="https://i.postimg.cc/2S6JLKyk/logo-1-removebg-preview.png" width="">
+
+</div>
+    <div class="avaliacao" id="avaliacao">
+
+        <button id="bt_sair"  onclick="Sair()">Sair</button>
+        <h1 id="titulo"> Avalie o seu locatário</h1>
+        
+        
+        <h3>Do que você gostou?</h3>
+        
+    
+        <div id="group_buttons">
+            <div class="linha">
+                <div class="coluna-1">
+                    <input type="checkbox" id="checkbox_cordialidade">
+                    <label for="checkbox_cordialidade">Cordialidade</label>
+                    </div>
+                <div class="coluna-2">
+                    <input type="checkbox" id="checkbox_pontualidade">
+                    <label for="checkbox_pontualidade">Pontualidade</label>
+                    
+                    </div>
+                
+             </div>
+
+             <div class="linha2">
+                <div class="coluna-3"> 
+                    <input type="checkbox" id="checkbox_honestidade">
+                    <label for="checkbox_honestidade">Honestidade</label>
+                    
+                    </div>
+
+                <div class="coluna-4">
+                    <input type="checkbox" id="checkbox_zeloso">
+                    <label for="checkbox_zeloso">Zeloso</label>
+                    </div>
+             </div>
+             
+            
+    
+           
+    
+        </div>
+    
+    
+       
+        
+        <h3> Escolha de 1 a 5 estrelas para classificar:</h3>
+    
+        
+    <div class="icones" id="icones">
+        
+            <a href="javascript:void(0)" onclick="Avaliar(1);">
+            <img src="https://i.postimg.cc/vm8Mmmn7/star-white.png" id="s1"></a>
+        
+            <a href="javascript:void(0)" onclick="Avaliar(2);">
+            <img src="https://i.postimg.cc/vm8Mmmn7/star-white.png" id="s2"></a>
+        
+            <a href="javascript:void(0)" onclick="Avaliar(3);">
+            <img src="https://i.postimg.cc/vm8Mmmn7/star-white.png" id="s3"></a>
+        
+            <a href="javascript:void(0)" onclick="Avaliar(4);">
+            <img src="https://i.postimg.cc/vm8Mmmn7/star-white.png" id="s4"></a>
+        
+            <a href="javascript:void(0)" onclick="Avaliar(5);">
+            <img src="https://i.postimg.cc/vm8Mmmn7/star-white.png" id="s6"></a>
+
+
+            <br>
+    </div>
+    
+    
+    
+    <p id="rating">0</p>
+    
+    
+    <h3>Deixe aqui seu comentário: </h3>
+        
+    <textarea  id="comentario" width="250px" height="300px"placeholder="Digite aqui.."  ></textarea>
+    
+    <button id="bt_enviar"  onclick="Enviar()">Enviar</button>
+
+    </div>
+    
+
+
+
+
+
+</div>
+<script src="locador.js"> </script>
+    
+</body>  
+
+</html>
